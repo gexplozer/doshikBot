@@ -11,7 +11,7 @@ bot.on('text', (ctx) => {
 	ctx.reply(`Hello ${ctx.state.role}`)
 })
 bot.on('inline_query', (ctx) => {
-	const result = [{ "id": 1, "type": "photo", "photo_url": "https://www.utkonos.ru/resample/450x450q95/images/photo/3081/3081817H.jpg", "thumb_url":"https://www.utkonos.ru/resample/450x450q95/images/photo/3081/3081817H.jpg"}];
+	const result = [{ "id": "1", "type": "photo", "photo_url": "https://www.utkonos.ru/resample/450x450q95/images/photo/3081/3081817H.jpg", "thumb_url": "https://www.utkonos.ru/resample/450x450q95/images/photo/3081/3081817H.jpg"}];
 	ctx.answerInlineQuery(result);
 })
 bot.startPolling();
