@@ -6,7 +6,7 @@ bot.on('text', (ctx) => {
 	ctx.reply(`Hello ${ctx.state.role}`)
 })
 bot.on('inline_query', (ctx) => {
-	const result = ["Вот это поворот!"];
+	const result = [{0:"Вот это поворот!"}];
 	ctx.answerInlineQuery(result);
 })
 bot.startPolling();
